@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "autoprefixer": "^8.2.0",
+    "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.11",
     "cssnano": "^3.10.0",
     "extract-loader": "^2.0.1",

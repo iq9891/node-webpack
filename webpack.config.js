@@ -3,6 +3,8 @@ const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // 追加html
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+// 清理某一个文件夹
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -69,7 +71,7 @@ module.exports = {
     ]
   },
   plugins: [
-    // extractSass
+    new CleanWebpackPlugin(['dist']),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
