@@ -4,11 +4,14 @@
   "description": "webpack demo",
   "main": "index.js",
   "dependencies": {
+    "lodash": "^4.17.5",
     "webpack": "^4.4.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack-cli": "^2.0.13"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx webpack src/index.js --output dist/bundle.js --mode production"
   },
   "repository": {
     "type": "git",
