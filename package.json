@@ -4,15 +4,22 @@
   "description": "webpack4 demo",
   "main": "index.js",
   "dependencies": {
+    "autoprefixer": "^8.2.0",
     "css-loader": "^0.28.11",
+    "cssnano": "^3.10.0",
     "extract-loader": "^2.0.1",
     "file-loader": "^1.1.11",
     "lodash": "^4.17.5",
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.8.3",
+    "postcss": "^6.0.21",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^11.1.0",
+    "postcss-loader": "^2.1.3",
     "resolve-url-loader": "^2.3.0",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
+    "sugarss": "^1.0.1",
     "webpack": "^4.4.1"
   },
   "devDependencies": {

@@ -1,5 +1,5 @@
 import join from 'lodash/join';
-import './style0.scss';
+import './style.scss';
 import Icon from './icon.jpg';
 
 function component() {

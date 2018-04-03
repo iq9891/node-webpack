@@ -1,12 +1,6 @@
 const path = require('path');
 // 分离样式文件
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-
-const extractSass = new ExtractTextPlugin({
-    filename: "src/[name].[contenthash].css",
-    disable: process.env.NODE_ENV === "development"
-});
 
 module.exports = {
   entry: './src/index.js',
@@ -23,7 +17,8 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           "style-loader",
-          "css-loader"]
+          "css-loader",
+        ]
       },
       {
           test: /\.scss$/,
@@ -46,7 +41,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
-      filename: "[name].css",
+      filename: "../dist/[name].css",
       chunkFilename: "[id].css"
     })
   ]
