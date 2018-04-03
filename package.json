@@ -4,7 +4,9 @@
   "description": "webpack4 demo",
   "main": "index.js",
   "dependencies": {
+    "css-loader": "^0.28.11",
     "lodash": "^4.17.5",
+    "style-loader": "^0.20.3",
     "webpack": "^4.4.1"
   },
   "devDependencies": {
