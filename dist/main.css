@@ -1,10 +1,19 @@
+@font-face {
+  font-family: my;
+  src: url(382aadca6a94ac46f7b06ec12d4e8b62.eot);
+  src: url(382aadca6a94ac46f7b06ec12d4e8b62.eot#iefix) format("embedded-opentype"), url(ea835c329bcc88fb754964f22a7da7f1.ttf) format("truetype"), url(d4017556692cfdd15e46f8aefb13ca62.woff) format("woff"), url(a39ab1d0c02ce27d18144a1665328e04.svg#iconfont) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .hello {
   color: red;
   background: url(be88399a359dd0e1b5fbcf54fc16606b.jpg);
   display: flex; }
 
-div {
-  font-size: 200px; }
+.erweima {
+  font-family: 'my'; }
+  .erweima::before {
+    content: "\E62F"; }
 
 
 /*# sourceMappingURL=main.css.map*/

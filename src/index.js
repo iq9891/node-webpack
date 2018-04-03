@@ -15,6 +15,11 @@ function component() {
 
   element.appendChild(myIcon);
 
+
+  var icon = document.createElement('i');
+  icon.classList.add('erweima');
+  element.appendChild(icon);
+
   return element;
 }
 
