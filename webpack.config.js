@@ -1,6 +1,8 @@
 const path = require('path');
 // 分离样式文件
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+// 追加html
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -73,6 +75,9 @@ module.exports = {
       // both options are optional
       filename: "../dist/[name].css",
       chunkFilename: "[id].css"
+    }),
+    new HtmlWebpackPlugin({
+      title: '设置html内容'
     })
   ]
 };
