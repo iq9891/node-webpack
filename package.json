@@ -9,6 +9,7 @@
     "cssnano": "^3.10.0",
     "extract-loader": "^2.0.1",
     "file-loader": "^1.1.11",
+    "image-webpack-loader": "^4.2.0",
     "lodash": "^4.17.5",
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.8.3",
