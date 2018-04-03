@@ -5,6 +5,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // 清理某一个文件夹
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+// manifest
+const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -71,6 +73,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new ManifestPlugin(),
     new CleanWebpackPlugin(['dist']),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output

@@ -23,7 +23,8 @@
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "sugarss": "^1.0.1",
-    "webpack": "^4.4.1"
+    "webpack": "^4.4.1",
+    "webpack-manifest-plugin": "^2.0.0-rc.2"
   },
   "devDependencies": {
     "webpack-cli": "^2.0.13"
